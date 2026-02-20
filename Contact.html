@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduLink Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- ================= SECTION 1 : HEADER (Sticky) ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="Home.html" class="logo">
+                <span class="logo-icon">⬛</span>
+                EduLink
+            </a>
+
+            <!-- Nav Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Home.html" class="active">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Features.html">Features</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Login Button -->
+            <a href="Login.html" class="btn-login">Login</a>
+
+        </div>
+    </header>
+
+
+
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section section-top">
+    <div class="container">
+
+        <!-- Main Title -->
+        <h1 class="contact-main-title">Contact Us</h1>
+        <p class="contact-description">
+            We are here to assist you with any questions or support you need.
+        </p>
+
+        <!-- Subtitle -->
+        <h2 class="contact-subtitle1">Get in Touch</h2>
+
+        <!-- Contact Grid -->
+        <div class="contact-grid">
+
+            <!-- Row 1 -->
+            <div class="contact-label">Email</div>
+            <div class="contact-label">Phone</div>
+
+            <!-- Row 2 -->
+            <div class="contact-value">support@edulink.com</div>
+            <div class="contact-value">+91 98765 43210</div>
+
+        </div>
+
+        <!-- Office Hours -->
+        <div class="office-hours">
+            <h3>Office Hours</h3>
+            <p>Monday – Friday | 9:00 AM – 5:00 PM</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ================= CONTACT FORM ================= -->
+
+<h2 class="contact-subtitle">Send Us an Enquiry</h2>
+
+<form id="contactForm" class="contact-form">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="4" placeholder="Write your message" required></textarea>
+
+    <button type="submit" class="gradient-btn">Submit Enquiry</button>
+
+    <p id="successMessage" class="success-message"></p>
+
+</form>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <!-- Row 1 -->
+    <div class="footer-links">
+        <a href="AboutUs.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="footer-copy">
+        © 2026 EduLink. All rights reserved.
+    </div>
+
+</footer>
+
+
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("successMessage").textContent = "Submitted successfully";
+
+    this.reset();
+});
+</script>
+
+
+</body>
+</html>
+

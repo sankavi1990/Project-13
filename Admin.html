@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - EduLink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= ADMIN HEADER ================= -->
+
+<header class="admin-header">
+    <a href="Home.html" class="admin-logo">EduLink</a>
+
+    <nav class="admin-navbar">
+        <a href="#">Dashboard</a>
+        <a href="#">Teachers</a>
+        <a href="#">Students</a>
+        <a href="#">Attendance</a>
+        <a href="#">Exams & Result</a>
+        <a href="#">Fees</a>
+        <a href="#">Settings</a>
+        <a href="Login.html">
+        <button class="admin-login-btn">Login</button>
+        </a>
+    </nav>
+</header>
+
+
+<!-- ================= DASHBOARD SECTION ================= -->
+
+<section class="admin-dashboard-header">
+    <div>
+        <h1 class="admin-title">Dashboard</h1>
+        <p class="admin-subtext">
+            Welcome back, Sarah! Here's a quick overview of your school's activities.
+        </p>
+    </div>
+
+    <button class="admin-logout-btn" onclick="logout()">Logout</button>
+</section>
+
+
+<!-- ================= CARDS SECTION ================= -->
+
+<section class="admin-cards">
+
+    <div class="admin-card">
+        <p class="admin-card-title">Total Students</p>
+        <h2 class="admin-card-number">450</h2>
+    </div>
+
+    <div class="admin-card">
+        <p class="admin-card-title">Total Teachers</p>
+        <h2 class="admin-card-number">30</h2>
+    </div>
+
+    <div class="admin-card">
+        <p class="admin-card-title">Classes</p>
+        <h2 class="admin-card-number">15</h2>
+    </div>
+
+    <div class="admin-card">
+        <p class="admin-card-title">Attendance %</p>
+        <h2 class="admin-card-number">92%</h2>
+    </div>
+
+    <div class="admin-card">
+        <p class="admin-card-title">Fees Status</p>
+        <h2 class="admin-card-number">Paid</h2>
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="admin-quick-actions">
+    <h2 class="admin-section-title">Quick Actions</h2>
+
+    <div class="admin-action-cards">
+
+        <div class="admin-action-card active">Add Student</div>
+        <div class="admin-action-card">Mark Attendance</div>
+        <div class="admin-action-card">View Reports</div>
+        <div class="admin-action-card">Add Teacher</div>
+        <div class="admin-action-card">Create Class</div>
+        <div class="admin-action-card">Generate Report</div>
+
+    </div>
+</section>
+
+
+<!-- ================= RECENT ACTIVITIES ================= -->
+
+<section class="admin-activities">
+    <h2 class="admin-section-title">Recent Activities</h2>
+
+    <div class="admin-activity-item">
+        <div class="activity-icon">🎓</div>
+        <div class="activity-content">
+            <p class="activity-title">New student enrolled</p>
+            <p class="activity-subtext">Sophia Clark enrolled in Class 10A</p>
+        </div>
+    </div>
+
+    <div class="admin-activity-item">
+        <div class="activity-icon">👨‍🏫</div>
+        <div class="activity-content">
+            <p class="activity-title">Teacher added</p>
+            <p class="activity-subtext">Mr. David Miller joined the faculty</p>
+        </div>
+    </div>
+
+    <div class="admin-activity-item">
+        <div class="activity-icon">🏫</div>
+        <div class="activity-content">
+            <p class="activity-title">Class created</p>
+            <p class="activity-subtext">Class 10B created</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <!-- Row 1 -->
+    <div class="footer-links">
+        <a href="AboutUs.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="footer-copy">
+        © 2026 EduLink. All rights reserved.
+    </div>
+
+</footer>
+
+
+
+<script>
+function logout() {
+    window.location.href = "Home.html";
+}
+</script>
+
+</body>
+</html>
